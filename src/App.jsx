@@ -103,7 +103,7 @@ function App() {
 return (
   <div className="container">  
 	<div className="row">
-		<div className="col-md-4"> </div>
+		<div className="col"> </div>
 	</div>
 
  
@@ -111,32 +111,34 @@ return (
 
 
     <div className="row">
-      <div className="col-md-4"></div>
-      <div className="col-md-4">
+      <div className="col"></div>
+      <div className="col">
       <input  type='text'placeholder='Name' ></input>
       </div>
-      <div className="col-md-4"></div>
+      <div className="col"></div>
     </div>
 
   <div className="row">
-      <div className="col-md-4"></div>
-      <div className="col-md-4">
+      <div className="col"></div>
+      <div className="col">
         <AsyncSelect
         cacheOptions
         defaultOptions
         value={selectedValue}
         getOptionLabel={e => e.country.name}
         getOptionValue={e => e.country.id}
-        loadOptions={fetchUsers2}
+         loadOptions={fetchUsers2}
         onInputChange={handleInputChange}
         onChange={handleChange}
       />
       </div>
-      <div className="col-md-4"></div>
+
+      
+      <div className="col"></div>
     </div>
     <div className="row">
-      <div className="col-md-4"></div>
-      <div className="col-md-4">
+      <div className="col"></div>
+      <div className="col">
         <AsyncSelect
         cacheOptions
         defaultOptions
@@ -145,10 +147,10 @@ return (
         getOptionValue={e => e.id}
         loadOptions={fetchUsers}
         onInputChange={handleInputChange}
-        onChange={handleChange}
+         onChange={handleChange}
       />
       </div>
-      <div className="col-md-4"></div>
+      <div className="col"></div>
     </div>
 
     
@@ -159,4 +161,3 @@ return (
 }
 
 export default App
-
